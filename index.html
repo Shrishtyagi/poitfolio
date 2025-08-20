@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img class="invert" src="img/close.svg" alt="">
+            </div>
+            <div class="home bg-gray rounded p-1">
+                <div class="logo">
+                    <img class="invert" src="img/logo.svg" alt="Spotify" />
+                </div>
+                <ul>
+                    <li><img class="invert" src="img/home.svg" alt="Home" />Home</li>
+                    <li><img class="invert" src="img/search.svg" alt="Search" />Search</li>
+                </ul>
+            </div>
+            <div class="library bg-gray rounded m-2 p-1">
+                <div class="heading">
+                    <img class="invert" src="img/playlist.svg" alt="playlist" />
+                    <h4 class="para">Your Playlist</h4>
+                </div>
+                <div class="songlist">
+                    <ul></ul>
+                </div>
+
+                <div class="footer">
+                    <div>
+                        <a href="youtube.com"><span>legal</span></a>
+                    </div>
+                    <div>
+                        <a href="youtube.com"><span>legal</span></a>
+                    </div>
+                    <div>
+                        <a href="youtube.com"><span>legal</span></a>
+                    </div>
+                    <div>
+                        <a href="youtube.com"><span>legal</span></a>
+                    </div>
+                    <div>
+                        <a href="youtube.com"><span>legal</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-gray rounded">
+            <div class="header rounded">
+                <div class="nav">
+                    <div class="hamburgercontainer flex">
+                        <img class="hamburger" src="img/hamburgeicon.svg" alt="">
+
+                        <svg class="invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24" color="#000000" fill="none">
+                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <svg class="invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24" color="#000000" fill="none">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signUpBtn">Sign up</button>
+                    <button class="logInBtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotify-playlist">
+                <h1>Spotify Playlist</h1>
+                <div class="cardContainer">
+
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+                <div class="abovebar">
+                    <div class="songinfo"></div>
+                    <div class="songbuttons">
+                        <img class="invert" id="previous" src="img/prev.svg" alt="prev" />
+                        <img class="invert" id="play" src="img/play.svg" alt="prev" />
+                        <img class="invert" id="next" src="img/next.svg" alt="prev" />
+                    </div>
+                    <div class="volumeTime">
+                        <div class="sound flex ">
+                            <div class="volume ">
+                                <img src="img/volume.svg" alt="">
+                            </div>
+                            <div class="range">
+                                <input type="range" name="volume" id="">
+                            </div>
+                        </div>
+                        <div class="songtime"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
