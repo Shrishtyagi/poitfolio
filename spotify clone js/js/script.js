@@ -19,7 +19,13 @@ function secondsToMinutsSeconds(seconds) {
 }
 async function getSongs(folder) {
     currfolder = folder;
-    let a = await fetch(`http://127.0.0.1:5500/${folder}/`);
+    // for local host
+    // let a = await fetch(`http://127.0.0.1:5500/${folder}/`);
+   
+    //for live hosting
+    let a = await fetch(`/${folder}/`);
+
+    
     let response = await a.text();
     // console.log(response)
     let div = document.createElement("div")
@@ -86,10 +92,10 @@ const PlayMusic = (track, pause = false) => {
 async function displayAlbums() {
 
     //for local
-    let a = await fetch(`http://127.0.0.1:5500/songs/`);
+    // let a = await fetch(`http://127.0.0.1:5500/songs/`);
     
    //for hosting
-//    let a = await fetch(`/songs/`);
+   let a = await fetch(`/songs/`);
 
     let response = await a.text();
 
@@ -109,11 +115,11 @@ async function displayAlbums() {
             //get the meta data of folder
             
             //for local
-            let a = await fetch(`http://127.0.0.1:5500/songs/${folder}/info.json`);
+            // let a = await fetch(`http://127.0.0.1:5500/songs/${folder}/info.json`);
             
 
             //for hosting
-            // let a = await fetch(`/songs/${folder}/info.json`);
+            let a = await fetch(`/songs/${folder}/info.json`);
             
             
             let response = await a.json();
