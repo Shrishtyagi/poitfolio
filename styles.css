@@ -231,13 +231,14 @@ section h2 {
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
+ 
 }
 
 .skill-card {
   min-width: 110px;
   text-align: center;
   background: var(--primary);
-  color: var(--foreground);
+  color: black;
   transition: background var(--transition), color var(--transition), transform var(--transition), box-shadow var(--transition);
 }
 
@@ -372,27 +373,7 @@ footer {
 
 /* Smartphones */
 @media (max-width: 600px) {
-  /* nav {
-    padding: 1rem 1rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.75rem;
-    width: 100%;
-  }
-
-  nav ul li {
-    width: 100%;
-  }
-
-  nav a {
-    width: 100%;
-    display: block;
-  } */
+  
    body{
     padding-right:  1%;
     justify-content: center;
