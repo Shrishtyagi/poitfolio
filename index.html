@@ -2,112 +2,186 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/utility.css" />
-    <title>Music Player</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrish Tyagi | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="container flex bg-black">
-        <div class="left">
-            <div class="close">
-                <img class="invert" src="img/close.svg" alt="">
+    <nav>
+        <div class="logo">Shrish Tyagi</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+
+    <header>
+        <div class="hero-flex">
+            <div class="hero-img">
+                <img src="img_shrish.jpg" alt="Profile Photo">
             </div>
-            <div class="home bg-gray rounded p-1">
-                <div class="logo">
-                    <img class="invert" src="img/logo.svg" alt="Spotify" />
+            <div class="hero-text">
+                <h1>Hello, I'm <span class="highlight">Shrish Tyagi</span></h1>
+                <h3>Full-Stack Developer | SAP ABAP Intern</h3>
+                <p>
+                    Enthusiastic and detail-oriented Computer Science student skilled in Full-Stack Development.<br>
+                    Adept at designing efficient solutions, troubleshooting, and building robust systems using modern
+                    technologies.<br>
+                    Thrive in collaborative environments and ready for new challenges!
+                </p>
+                <div class="hero-cta">
+                    <a href="Shrish_Tyagi_Resume_.pdff" download class="btn">Download Resume</a>
+                    <a href="#contact" class="btn">Contact Me</a>
                 </div>
+                <div class="social-links">
+                    <a href="mailto:shrishtyagi2004@gmail.com" aria-label="Email"><img src="mail.svg" alt=""></a>
+                    <a href="https://github.com/" target="_blank" aria-label="GitHub"><img src="github.svg" alt=""></a>
+                    <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><img src="linkedin.svg"
+                            alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="fade-in-up">
+        <h2>About Me</h2>
+        <p>
+            I am pursuing a Bachelor of Technology in Computer Science and Engineering (2022 - Present, AKTU,
+            Lucknow).<br>
+            Strong in analytical thinking and problem-solving, with hands-on experience in both SAP ABAP and full-stack
+            modern web development.<br>
+            Passionate about automating and streamlining processes using efficient, maintainable code.
+        </p>
+    </section>
+
+    <section id="experience" class="fade-in-up">
+        <h2>Experience</h2>
+        <div class="exp-card hover-pop">
+            <h3>Full-Stack Development Intern</h3>
+            <span>DRDO - TBRL, Chandigarh | July 2025 - Present</span>
+            <ul>
+                <li>Designed and developed the "Integrated Dashboard System for Works Complaint Management" using
+                    <b>ReactJS</b> (frontend), <b>Node.js & Express.js</b> (backend).</li>
+                <li>Automated Excel file-based data storage and offline-compatible backend, integrating Docxtemplater
+                    and Pizzip libraries for automatic Word/PDF report generation.</li>
+                <li>Digitized maintenance workflow end-to-end: lodging, tracking, and escalation of
+                    civil/electrical/furniture complaints.</li>
+                <li>Replaced a manual, paper-driven system, increasing operational efficiency and transparency.</li>
+            </ul>
+        </div>
+        <div class="exp-card hover-pop">
+            <h3>SAP ABAP Consultant Intern</h3>
+            <span>ISGEC HEAVY ENGINEERING LTD., Noida | June 2025 - July 2025</span>
+            <ul>
+                <li>Developed, debugged, and enhanced SAP ABAP custom reports and enterprise modules to meet business
+                    requirements.</li>
+                <li>Worked in a live SAP ERP environment, gaining practical insight into business processes and system
+                    integration for a global engineering firm.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in-up">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-card animate hover-pop">
+                <h3>Voice-Controlled Virtual Assistant</h3>
+                <p>
+                    Python, speechrecognition, OpenAI, gTTS<br>
                 <ul>
-                    <li><img class="invert" src="img/home.svg" alt="Home" />Home</li>
-                    <li><img class="invert" src="img/search.svg" alt="Search" />Search</li>
+                    <li>Created a voice assistant to handle web browsing, news retrieval (using NewsAPI), music
+                        playback, and user commands.</li>
+                    <li>Integrated OpenAI’s GPT for natural language responses; used SpeechRecognition for input and
+                        gTTS/pygame for TTS and audio playback.</li>
                 </ul>
+                </p>
             </div>
-            <div class="library bg-gray rounded m-2 p-1">
-                <div class="heading">
-                    <img class="invert" src="img/playlist.svg" alt="playlist" />
-                    <h4 class="para">Your Playlist</h4>
-                </div>
-                <div class="songlist">
-                    <ul></ul>
-                </div>
+            <div class="project-card animate hover-pop">
+                <h3>Music Player</h3>
+                <p>
+                    HTML, CSS, JavaScript<br>
+                <ul>
+                    <li>Developed a responsive, single-page music player using vanilla HTML, CSS (Flexbox, media
+                        queries), and JavaScript, featuring a dynamic UI compatible across devices.
 
-                <div class="footer">
-                    <div>
-                        <a href="youtube.com"><span>legal</span></a>
-                    </div>
-                    <div>
-                        <a href="youtube.com"><span>legal</span></a>
-                    </div>
-                    <div>
-                        <a href="youtube.com"><span>legal</span></a>
-                    </div>
-                    <div>
-                        <a href="youtube.com"><span>legal</span></a>
-                    </div>
-                    <div>
-                        <a href="youtube.com"><span>legal</span></a>
-                    </div>
-                </div>
+                    </li>
+                    <li>Engineered seamless music playback with asynchronous song fetching, enabling play, pause, next,
+                        previous controls, dynamic seekbar, and instant playlist updates without page reloads.</li>
+                </ul>
+                </p>
             </div>
+            <div class="project-card animate hover-pop">
+                <h3>Integrated Dashboard System for Complaint Management</h3>
+                <p>
+                    ReactJS, Node.js, Express.js, Docxtemplater, Pizzip<br>
+                <ul>
+                    <li>Digitized complaint management for civil, electrical, and furniture works.</li>
+                    <li>Automated records and report generation, replacing inefficient paper-based workflow.</li>
+                </ul>
+                </p>
+            </div>
+
+            <!-- Add more projects when needed -->
         </div>
-        <div class="right bg-gray rounded">
-            <div class="header rounded">
-                <div class="nav">
-                    <div class="hamburgercontainer flex">
-                        <img class="hamburger" src="img/hamburgeicon.svg" alt="">
+    </section>
 
-                        <svg class="invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
-                            height="24" color="#000000" fill="none">
-                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                        <svg class="invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
-                            height="24" color="#000000" fill="none">
-                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </div>
-                </div>
-                <div class="buttons">
-                    <button class="signUpBtn">Sign up</button>
-                    <button class="logInBtn">Log in</button>
-                </div>
-            </div>
-            <div class="spotify-playlist">
-                <h1>Spotify Playlist</h1>
-                <div class="cardContainer">
-
-                </div>
-            </div>
-            <div class="playbar">
-                <div class="seekbar">
-                    <div class="circle"></div>
-                </div>
-                <div class="abovebar">
-                    <div class="songinfo"></div>
-                    <div class="songbuttons">
-                        <img class="invert" id="previous" src="img/prev.svg" alt="prev" />
-                        <img class="invert" id="play" src="img/play.svg" alt="prev" />
-                        <img class="invert" id="next" src="img/next.svg" alt="prev" />
-                    </div>
-                    <div class="volumeTime">
-                        <div class="sound flex ">
-                            <div class="volume ">
-                                <img src="img/volume.svg" alt="">
-                            </div>
-                            <div class="range">
-                                <input type="range" name="volume" id="">
-                            </div>
-                        </div>
-                        <div class="songtime"></div>
-                    </div>
-                </div>
-            </div>
+    <section id="skills" class="fade-in-up">
+        <h2>Technical Skills</h2>
+        <div class="skills-list">
+            <div class="skill-card hover-float">Python</div>
+            <div class="skill-card hover-float">C</div>
+            <div class="skill-card hover-float">JavaScript</div>
+            <div class="skill-card hover-float">HTML & CSS</div>
+            <div class="skill-card hover-float">Node.js</div>
+            <div class="skill-card hover-float">ReactJS</div>
+            <div class="skill-card hover-float">Express.js</div>
+            <div class="skill-card hover-float">SAP ABAP</div>
+            <div class="skill-card hover-float">MySQL</div>
+            <div class="skill-card hover-float">Power BI</div>
+            <div class="skill-card hover-float">VS Code</div>
+            <div class="skill-card hover-float">Visual Studio</div>
         </div>
-    </div>
-    <script src="js/script.js"></script>
+        <h3>Core Skills</h3>
+        <div class="softskills-list">
+            <div class="skill-card hover-float">Analytical Thinking</div>
+            <div class="skill-card hover-float">Technical Proficiency</div>
+            <div class="skill-card hover-float">Problem Solving</div>
+        </div>
+    </section>
+
+    <section id="achievements" class="fade-in-up">
+        <h2>Achievements & Certificates</h2>
+        <ul class="ach-list">
+            <li>
+                <strong>Freedom Employability Academy (FEA)</strong><br>
+                March 2022 - Oct 2022<br>
+                Covered Communication Skills, Soft Skills, Group Discussions, and Presentation Skills.
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact" class="fade-in-up">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <span>&copy; 2025 Shrish Tyagi. All rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
